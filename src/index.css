@@ -54,3 +54,34 @@ nav a {
 /*---------------------------
 main
 ------------------------------*/
+main section:first-of-type {
+  background-color: #1c1c1c;
+  color: white;
+}
+.top-content {
+  font-size: 25px;
+  padding: 30px 5px;
+}
+main section:last-of-type {
+  background-color: #0282f9;
+  color: white;
+}
+main ul {
+  display: flex;
+}
+main li {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main img {
+  max-height: 40%;
+}
+main a {
+  padding: 0px 10px;
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
