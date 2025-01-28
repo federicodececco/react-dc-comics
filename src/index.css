@@ -17,6 +17,7 @@
 .container {
   max-width: 1200px;
   margin: auto;
+  position: relative;
 }
 .row {
   display: flex;
@@ -33,8 +34,7 @@
 /*---------------------------
 header
 ------------------------------*/
-nav {
-}
+
 nav div {
   flex-grow: 4;
 }
@@ -58,7 +58,7 @@ main section:first-of-type {
   background-color: #1c1c1c;
   color: white;
 }
-.top-content {
+main .top-section {
   font-size: 25px;
   padding: 30px 5px;
 }
@@ -84,4 +84,30 @@ main a {
   display: inline-block;
   text-decoration: none;
   color: white;
+}
+/*---------------------------
+footer
+------------------------------*/
+footer .top-section {
+  background-image: url("./footer-bg.jpg");
+  color: white;
+}
+footer a {
+  color: grey;
+  text-decoration: none;
+}
+section > div:first-of-type {
+  display: flex;
+}
+.container > div {
+  padding-left: 15px;
+}
+footer li {
+  list-style: none;
+}
+footer .top-section img {
+  overflow: hidden;
+  z-index: 0;
+  position: absolute;
+  top: -40px;
 }

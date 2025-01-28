@@ -3,7 +3,7 @@ export default function Main() {
     <main>
       <section>
         <div className="container">
-          <div className="top-content">--CONTENT goes here--</div>
+          <div className="top-section">--CONTENT goes here--</div>
         </div>
       </section>
       <section>
