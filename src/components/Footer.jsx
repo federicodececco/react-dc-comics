@@ -105,12 +105,48 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="logo">
             <img src="./dc-logo-bg.png" alt="" />
           </div>
         </div>
       </section>
-      <section></section>
+      <section className="bottom-section">
+        <div className="container">
+          <div className="btn-container">
+            <button className="primary-btn">SIGN-UP NOW!</button>
+          </div>
+          <div>
+            <p>FOLLOW US</p>
+            <ul>
+              <li>
+                <a href="">
+                  <img src="./footer-facebook.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./footer-twitter.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./footer-youtube.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./footer-pinterest.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./footer-periscope.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </footer>
   );
 }
