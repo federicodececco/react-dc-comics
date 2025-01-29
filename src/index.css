@@ -135,7 +135,9 @@ footer .top-section {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  padding: 20px 0;
+}
+footer .top-section .container {
+  display: flex;
 }
 footer section > div > ul {
   display: flex;
@@ -143,6 +145,7 @@ footer section > div > ul {
   flex-wrap: wrap;
   max-height: 400px;
   max-width: 50%;
+  padding: 20px 0;
 }
 footer section > div > ul > li {
   padding: 5px 10px;
@@ -151,12 +154,7 @@ footer .top-section ul > li > ul > li a {
   color: grey;
   text-decoration: none;
 }
-/* .logo {
-  background-image: url("./dc-logo-bg.png");
-  position: absolute;
-  flex-grow: 1;
-  z-index: 0;
-} */
+
 footer a {
   color: grey;
   text-decoration: none;
@@ -184,12 +182,7 @@ footer h1 {
 footer .top-section li {
   padding-top: 8px;
 }
-footer .top-section img {
-  z-index: 0;
-  position: absolute;
-  top: -140px;
-  right: 10px;
-}
+
 .bottom-section {
   background-color: #303030;
   z-index: 20;
@@ -231,4 +224,11 @@ main
 ------------------------------*/
 footer .top-section ul > li > ul > li a:hover {
   color: white;
+}
+.test {
+  flex-grow: 1;
+  background-image: url("./dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom 50% right 0px;
+  background-size: 75%;
 }
