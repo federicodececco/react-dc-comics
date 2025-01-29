@@ -2,9 +2,9 @@ export default function Footer() {
   return (
     <footer>
       <section className="top-section ">
-        <div className="container">
+        <div className="container ">
           {/* COMICS n SHOP */}
-          <div>
+          <div className="lists">
             {/*DC Comics */}
             <div>
               <h1>DC COMICS</h1>
@@ -46,7 +46,7 @@ export default function Footer() {
             </div>
           </div>
           {/* DC */}
-          <div>
+          <div className="lists">
             <h1>DC</h1>
             <ul>
               <li>
@@ -105,9 +105,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="logo">
-            <img src="./dc-logo-bg.png" alt="" />
-          </div>
+          {/* <div className="logo"></div> */}
         </div>
       </section>
       <section className="bottom-section">
