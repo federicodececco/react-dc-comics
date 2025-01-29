@@ -137,6 +137,20 @@ footer .top-section {
   color: white;
   padding: 20px 0;
 }
+footer section > div > ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 400px;
+  max-width: 50%;
+}
+footer section > div > ul > li {
+  padding: 5px 10px;
+}
+footer .top-section ul > li > ul > li a {
+  color: grey;
+  text-decoration: none;
+}
 /* .logo {
   background-image: url("./dc-logo-bg.png");
   position: absolute;
