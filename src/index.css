@@ -48,8 +48,8 @@ Buttons
   background-color: transparent;
   color: white;
   border: #0282f9 2px solid;
-  font-size: 30px;
-  padding: 15px 15px;
+  font-size: 22px;
+  padding: 12px 12px;
   cursor: pointer;
 }
 /*---------------------------
@@ -169,7 +169,7 @@ section > div:first-of-type {
   padding-right: 40px;
 }
 .container > div {
-  padding-left: 15px;
+  padding-left: 5px;
 }
 footer > .top-section .container {
   position: relative;
@@ -196,6 +196,8 @@ footer .top-section img {
 }
 .btn-container {
   margin: 20px 15px;
+  margin-left: 0px;
+  padding: 5px;
 }
 .bottom-section div:last-of-type {
   color: #0282f9;
@@ -227,6 +229,6 @@ footer p {
 /*---------------------------
 main
 ------------------------------*/
-footer a:hover {
+footer .top-section ul > li > ul > li a:hover {
   color: white;
 }
