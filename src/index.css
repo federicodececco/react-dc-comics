@@ -121,6 +121,25 @@ hero
 /*---------------------------
 main
 ------------------------------*/
+main {
+  position: relative;
+}
+/*---------------------------
+MainMenu
+------------------------------*/
+.menu {
+  position: absolute;
+  background-color: #0282f9;
+  z-index: 1;
+  color: white;
+  top: -20px;
+  font-size: 15px;
+  padding: 5px 15px;
+}
+/*---------------------------
+end MainMenu
+------------------------------*/
+
 main section:first-of-type {
   background-color: #1c1c1c;
   color: white;
@@ -130,7 +149,7 @@ ComicsList
 ------------------------------*/
 main .top-section {
   font-size: 25px;
-  padding: 30px 20px;
+  padding: 35px 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -142,8 +161,9 @@ main .top-section {
   font-size: 16px;
 }
 .comic {
-  width: calc(1200px / 6 - 18px * 2);
-  height: calc(calc(1200px / 6 - 18px * 2) * (100 / 70));
+  width: calc(1200px / 6 - 12px * 2);
+  height: calc(calc(1200px / 6 - 12px * 2) * (100 / 70));
+  cursor: pointer;
 }
 .comic div:first-of-type {
   height: 70%;
