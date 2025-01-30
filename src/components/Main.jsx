@@ -1,11 +1,12 @@
 import ComicsList from "./ComicsList";
-
+import LoadBtn from "./LoadBtn";
 export default function Main() {
   return (
     <main>
       <section>
         <div className="container">
           <ComicsList />
+          <LoadBtn />
         </div>
       </section>
       <section>
