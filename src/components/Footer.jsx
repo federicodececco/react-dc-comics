@@ -13,7 +13,7 @@ export default function Footer() {
                   <ul>
                     {elem.links.map((subElem) => {
                       return (
-                        <li>
+                        <li key={subElem}>
                           <a href="">{subElem}</a>
                         </li>
                       );
@@ -23,6 +23,9 @@ export default function Footer() {
               );
             })}
           </ul>
+          <div className="test">
+            <img className="tust" src="./dc-logo-bg" alt="" />
+          </div>
         </div>
       </section>
       <section className="bottom-section">

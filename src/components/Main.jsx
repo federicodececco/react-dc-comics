@@ -1,9 +1,11 @@
+import ComicsList from "./ComicsList";
+
 export default function Main() {
   return (
     <main>
       <section>
         <div className="container">
-          <div className="top-section">--CONTENT goes here--</div>
+          <ComicsList />
         </div>
       </section>
       <section>

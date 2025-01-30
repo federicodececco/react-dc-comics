@@ -94,16 +94,62 @@ nav a:hover {
   border-bottom: 0.25rem solid #0282f9;
 }
 /*---------------------------
+hero
+------------------------------*/
+
+.hero {
+  height: 500px;
+  background-image: url("./jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero img {
+  max-height: 100%;
+}
+
+/*---------------------------
 main
 ------------------------------*/
 main section:first-of-type {
   background-color: #1c1c1c;
   color: white;
 }
+/*---------------------------
+ComicsList
+------------------------------*/
 main .top-section {
   font-size: 25px;
-  padding: 30px 5px;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
+.comic h1 {
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.comic {
+  width: calc(1200px / 6 - 18px * 2);
+  height: calc(calc(1200px / 6 - 18px * 2) * (100 / 70));
+}
+.comic div:first-of-type {
+  height: 70%;
+}
+.comic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.comic div:last-of-type {
+  max-height: 30%;
+}
+/*---------------------------
+end ComicsList
+------------------------------*/
 main section:last-of-type {
   background-color: #0282f9;
   color: white;
@@ -117,7 +163,7 @@ main li {
   align-items: center;
   justify-content: center;
 }
-main img {
+main section:last-of-type img {
   max-height: 40%;
 }
 main a {
@@ -135,7 +181,9 @@ footer .top-section {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  padding: 20px 0;
+}
+footer .top-section .container {
+  display: flex;
 }
 footer section > div > ul {
   display: flex;
@@ -143,6 +191,7 @@ footer section > div > ul {
   flex-wrap: wrap;
   max-height: 400px;
   max-width: 50%;
+  padding: 20px 0;
 }
 footer section > div > ul > li {
   padding: 5px 10px;
@@ -151,12 +200,7 @@ footer .top-section ul > li > ul > li a {
   color: grey;
   text-decoration: none;
 }
-/* .logo {
-  background-image: url("./dc-logo-bg.png");
-  position: absolute;
-  flex-grow: 1;
-  z-index: 0;
-} */
+
 footer a {
   color: grey;
   text-decoration: none;
@@ -168,7 +212,7 @@ section > div:first-of-type {
 .lists {
   padding-right: 40px;
 }
-.container > div {
+footer .container > div {
   padding-left: 5px;
 }
 footer > .top-section .container {
@@ -184,12 +228,7 @@ footer h1 {
 footer .top-section li {
   padding-top: 8px;
 }
-footer .top-section img {
-  z-index: 0;
-  position: absolute;
-  top: -140px;
-  right: 10px;
-}
+
 .bottom-section {
   background-color: #303030;
   z-index: 20;
@@ -231,4 +270,11 @@ main
 ------------------------------*/
 footer .top-section ul > li > ul > li a:hover {
   color: white;
+}
+.test {
+  flex-grow: 1;
+  background-image: url("./dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom 50% right 0px;
+  background-size: 75%;
 }

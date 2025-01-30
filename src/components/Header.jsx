@@ -2,7 +2,7 @@ import headerMenu from "../data/headerMenu";
 
 export default function Header() {
   return (
-    <header className="container">
+    <header className="container" id="ciao">
       <nav className="row">
         <div>
           <img src="./dc-logo.png" alt="" />
@@ -10,7 +10,11 @@ export default function Header() {
         <ul className="row">
           {headerMenu.map((elem) => {
             return (
-              <li key={elem.id} className={elem.state ? "active" : ""}>
+              <li
+                id={`headerList${elem.id}`}
+                key={elem.id}
+                className={elem.state ? "active" : ""}
+              >
                 <a href={elem.link}> {elem.title}</a>
               </li>
             );
